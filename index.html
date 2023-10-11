@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container half some">
+
+        <div class="calculator">
+            <input type="text" placeholder="0" id="result">
+        <div class="row1 dly">
+            <button class="dis" onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button class="display dark " onclick="display('+')">+</button>
+        </div>
+        <div class="row2 dly">
+            <button class="dis" onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button class="display dark" onclick="display('-')">-</button>
+        </div>
+        <div class="row3 dly">
+            <button class="dis" onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button class="display dark" onclick="display('*')">x</button>
+        </div>
+        <div class="row4 dly">
+            <button class="dis last dly" onclick="display('.')">.</button>
+            <button class="last" onclick="display('0')">0</button>
+            <button class="last dark" onclick="display('%')" >%</button>
+            <button class="display last dark" onclick="display('/')">/</button>
+        </div>
+        <div class="row4 dly">
+            <button class="dis last extra" onclick="clr()">C</button>
+            <button class="last extra" onclick="delet()">del</button>
+            <button class="last dark inf" onclick="calculate()" >=</button>
+        </div>
+    </div>
+    </div> 
+
+    <script src="app.js"></script>
+</body>
+</html>
